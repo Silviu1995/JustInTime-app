@@ -1,0 +1,33 @@
+.navbar-container {
+    display: flex;
+    width: 100%;
+    background-color: #c51350;
+    justify-content: space-between;
+    border-radius: 0px 0px 80px 80px;
+    height: 80px;
+    .logo-container {
+        padding: 10px;
+        font-family: 'Acme', sans-serif;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background-color: red;
+        border-radius: 50%;
+        font-size: 14px;
+        margin: 15px 20px;
+    }
+    .links-container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px;
+        a {
+            text-decoration: none;
+            outline: none;
+            color: inherit;
+        }
+        
+    }
+}
