@@ -1,0 +1,73 @@
+.login-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #a7759b87;
+    gap: 10px;
+    width: 40vw;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    p {
+        font-style: italic;
+        font-size: 24px;
+        align-self: center;
+        color: #229e3b;
+        font-weight: 700;
+    }
+    input{
+        border-radius: 5px;
+        border: 0.5px solid grey;
+        padding: 5px;
+    }
+    input:focus {
+            outline: none;
+        }
+    label{
+        font-size: 16px;
+        color: rgb(98, 97, 97);
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        .fields-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 90%;
+            gap: 5px;
+            .field-container {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+            }
+        }
+        .field-container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        .buttons-container{
+            display: flex;
+            justify-items: center;
+            gap: 30px;
+            .submit-btn {
+                background-color: rgb(27, 142, 27);
+                padding: 10px 30px;
+                color: white;
+                border-radius: 7px;
+                border: none;
+            }
+            .switch-btn {
+                background-color: rgb(30, 49, 156);
+                padding: 10px 30px;
+                color: white;
+                border-radius: 7px;
+                border: none;
+            }
+        }
+        }
+}

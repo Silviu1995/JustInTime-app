@@ -9,6 +9,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LogoComponent } from './shared/logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ProductComponent } from './products/product/product.component';
     ShoppingCartComponent,
     NavbarComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent,
+    LogoComponent,
   ],
   imports: [
     BrowserModule,
