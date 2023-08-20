@@ -13,7 +13,12 @@ import { AuthComponent } from './auth/auth.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LogoComponent } from './shared/logo/logo.component';
-
+import { HomeComponent } from './home/home.component';
+import { ProductsListComponent } from './products/products-list/products-list.component';
+import { RestaurantsListComponent } from './restaurants/restaurants-list/restaurants-list.component';
+import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +32,16 @@ import { LogoComponent } from './shared/logo/logo.component';
     LoginComponent,
     RegisterComponent,
     LogoComponent,
+    HomeComponent,
+    ProductsListComponent,
+    RestaurantsListComponent,
+    RestaurantComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

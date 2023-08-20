@@ -1,0 +1,9 @@
+<div class="product-list">
+    <app-product 
+        *ngFor="let productEl of products; let i = index"
+        [product]="productEl"
+        [index]='i'
+        ></app-product>
+
+        
+</div>

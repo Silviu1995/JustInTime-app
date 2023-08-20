@@ -1,0 +1,18 @@
+<div class="restaurant-container">
+    <div class="restaurant-image">
+        <img src={{restaurant.imgUrl}}>
+        <span class="restaurant-type" *ngIf="restaurant.type">{{restaurant.type}}</span>
+        <span class="restaurant-title">{{restaurant.title}}</span>
+    </div>
+    <div class="restaurant-specific">
+        <span *ngFor="let typeElement of restaurant.specific" class="specific-element">{{typeElement}}</span>
+    </div>
+    <div class="restaurant-rating">
+        <mat-icon class="icon">star</mat-icon>
+        <mat-icon class="icon">star</mat-icon>
+        <mat-icon class="icon">star</mat-icon>
+        <mat-icon class="icon">star</mat-icon>
+        <mat-icon class="icon">star_half</mat-icon>
+        <span>{{restaurant.rating}} ( from 51 reviews )</span>
+    </div>
+</div>

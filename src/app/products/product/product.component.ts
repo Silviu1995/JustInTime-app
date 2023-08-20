@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/shared/logo/models/product.model';
 
 @Component({
   selector: 'app-product',
@@ -7,87 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
-  products = [
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://upload.wikimedia.org/wikipedia/commons/3/38/20200719_180910_Suduch_Pizza%2C_Pizzeria_Yoav_Tel_Aviv_anagoria.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    {
-      title: 'shit',
-      price: 5,
-      imgUrl:'https://i.stack.imgur.com/XGFw7m.jpg',
-      description: 'A short description of the shit'
-    },
-    
-  ]
+  @Input() product: Product
+  @Input() index: number
+  
 
 
 }
