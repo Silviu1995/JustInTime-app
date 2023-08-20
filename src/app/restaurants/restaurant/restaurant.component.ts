@@ -18,6 +18,6 @@ export class RestaurantComponent {
       'De sezon'
     ],
     rating: 4.5,
-    type: 'Featured'
+    type: 'New!'
   }
 }

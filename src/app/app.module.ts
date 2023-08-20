@@ -19,6 +19,7 @@ import { RestaurantsListComponent } from './restaurants/restaurants-list/restaur
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { OportunitiesComponent } from './home/oportunities/oportunities.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
     ProductsListComponent,
     RestaurantsListComponent,
     RestaurantComponent,
+    OportunitiesComponent,
   ],
   imports: [
     BrowserModule,

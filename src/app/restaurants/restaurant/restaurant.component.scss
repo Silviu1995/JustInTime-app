@@ -6,7 +6,7 @@
     padding: 5px;
     gap: 10px;
     border-radius: 10px;
-    background-color: rgb(230, 229, 229);
+    background-color: rgb(239, 239, 239);
     .restaurant-image {
         display: flex;
         position: relative;
@@ -17,13 +17,18 @@
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
+            
         }
         .restaurant-type{
             position: absolute;
+            font-size: 14px;
+            font-weight: 300;
+            color: rgb(52, 52, 52);
             padding: 5px;
             top: 20px;
             left: 20px;
             border-radius: 5px;
+            border: 1px solid white;
             background-color: rgb(16, 187, 16);
         }
         .restaurant-title {
@@ -40,12 +45,12 @@
             font-size: 18px;
             opacity: 80%;
             justify-content: center;
-        
+            border: 1px solid black;
         }
     }
     .restaurant-specific {
         background-color: white;
-        
+        border: 0.5px solid rgb(202, 202, 202);
         border-radius: 10px;
         display: flex;
         flex-wrap: wrap;
