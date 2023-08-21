@@ -23,6 +23,7 @@ import { OportunitiesComponent } from './home/oportunities/oportunities.componen
 import { SelectionsComponent } from './home/selections/selections.component';
 import { SelectionItemComponent } from './home/selections/selection-item/selection-item.component';
 import { CitiesComponent } from './home/cities/cities.component';
+import { FooterComponent } from './home/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +45,7 @@ import { CitiesComponent } from './home/cities/cities.component';
     SelectionsComponent,
     SelectionItemComponent,
     CitiesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
