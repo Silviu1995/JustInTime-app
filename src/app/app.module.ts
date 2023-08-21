@@ -20,6 +20,8 @@ import { RestaurantComponent } from './restaurants/restaurant/restaurant.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { OportunitiesComponent } from './home/oportunities/oportunities.component';
+import { SelectionsComponent } from './home/selections/selections.component';
+import { SelectionItemComponent } from './home/selections/selection-item/selection-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,8 @@ import { OportunitiesComponent } from './home/oportunities/oportunities.componen
     RestaurantsListComponent,
     RestaurantComponent,
     OportunitiesComponent,
+    SelectionsComponent,
+    SelectionItemComponent,
   ],
   imports: [
     BrowserModule,
