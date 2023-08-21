@@ -1,6 +1,11 @@
 <div class="container">
-    <app-selection-item 
+    <div class="title">
+        <h2>Discover our selections !</h2>
+    </div>
+    <div class="selection-container">
+        <app-selection-item 
         *ngFor="let selectionElement of selections"
         [selection]="selectionElement"
         ></app-selection-item>
+    </div>
 </div>

@@ -22,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { OportunitiesComponent } from './home/oportunities/oportunities.component';
 import { SelectionsComponent } from './home/selections/selections.component';
 import { SelectionItemComponent } from './home/selections/selection-item/selection-item.component';
+import { CitiesComponent } from './home/cities/cities.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { SelectionItemComponent } from './home/selections/selection-item/selecti
     OportunitiesComponent,
     SelectionsComponent,
     SelectionItemComponent,
+    CitiesComponent,
   ],
   imports: [
     BrowserModule,
