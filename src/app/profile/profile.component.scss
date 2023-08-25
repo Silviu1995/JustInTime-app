@@ -1,0 +1,89 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.119);
+    z-index: 50; 
+}
+.container{
+    position: fixed;
+    border-radius: 25px;
+    top: 10vh;
+    padding: 5px;
+    left: 60vw;
+    width: 30vw;
+    height: 88vh;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    overflow-y: scroll;
+
+    h2{
+        padding: 20px 0px 30px 0px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 3px solid rgb(157, 157, 157);
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+        .data-container{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-bottom: 3px solid rgb(157, 157, 157);
+            gap: 20px;
+            padding:20px 0px;
+            .hint{
+                font-size: 18px;
+                color: rgb(136, 136, 136);
+            }
+            .value{
+                font-size: 18px;
+                display: flex;
+                align-items: start;
+                gap: 5px;
+                color: rgb(59, 59, 59);
+                .pass{
+                    color: black;
+                    background-color: black;
+                    padding: 0px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius:50%;
+                }
+            }
+            span{
+                position: absolute;
+                right: 10px;
+                font-size: 20px;
+                color: rgb(27, 82, 163);
+                font-weight: 500;
+                cursor: pointer;
+            }
+            span:hover{
+                color: blue;
+                font-size: 22px;
+            }
+        }
+        button{
+            padding: 5px;
+            margin-top: 20px;
+            background-color: rgb(39, 10, 60);
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: black;
+        }
+    }
+}

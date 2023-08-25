@@ -9,6 +9,7 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurants/restaurant/restaurant.component';
 import { RestaurantsListComponent } from './restaurants/restaurants-list/restaurants-list.component';
 import { LocationModalComponent } from './home/location-modal/location-modal.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: 'modal',
     component: LocationModalComponent
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent
   }
 ];
 
