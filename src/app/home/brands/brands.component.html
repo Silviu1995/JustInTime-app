@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="title">
+        <h2>Featured brand in Romania</h2>
+    </div>
+    <div class="brand-container">
+        <app-brand-item 
+            *ngFor="let brandEl of brands"
+            [brand]="brandEl">
+        </app-brand-item> 
+        
+    </div>
+</div>

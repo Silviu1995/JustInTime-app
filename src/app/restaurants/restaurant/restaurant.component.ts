@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Restaurant } from 'src/app/shared/logo/models/restaurant.mode';
 
 @Component({
   selector: 'app-restaurant',
@@ -6,18 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./restaurant.component.scss']
 })
 export class RestaurantComponent {
-  restaurant = {
-    title: 'Clatitaria Bonateli',
-    imgUrl: 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    location: 'Str mircea voda, nr. 50',
-    specific: [
-      'Frantuzesc',
-      'Clatite',
-      'Desert',
-      'Dulce',
-      'De sezon'
-    ],
-    rating: 4.5,
-    type: 'New!'
-  }
+  @Input() restaurant: Restaurant
 }

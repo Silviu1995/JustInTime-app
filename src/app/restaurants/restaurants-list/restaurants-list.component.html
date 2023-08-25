@@ -1,1 +1,6 @@
-<p>restaurants-list works!</p>
+<div class="container">
+    <app-restaurant
+        *ngFor="let restaurantEl of restaurants"
+        [restaurant]="restaurantEl"
+    ></app-restaurant>
+</div>

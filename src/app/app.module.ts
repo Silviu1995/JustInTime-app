@@ -24,6 +24,9 @@ import { SelectionsComponent } from './home/selections/selections.component';
 import { SelectionItemComponent } from './home/selections/selection-item/selection-item.component';
 import { CitiesComponent } from './home/cities/cities.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { BrandsComponent } from './home/brands/brands.component';
+import { BrandItemComponent } from './home/brands/brand-item/brand-item.component';
+import { LocationModalComponent } from './home/location-modal/location-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +49,9 @@ import { FooterComponent } from './home/footer/footer.component';
     SelectionItemComponent,
     CitiesComponent,
     FooterComponent,
+    BrandsComponent,
+    BrandItemComponent,
+    LocationModalComponent,
   ],
   imports: [
     BrowserModule,
