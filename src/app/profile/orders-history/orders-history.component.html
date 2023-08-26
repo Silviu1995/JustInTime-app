@@ -1,0 +1,24 @@
+<div class="overlay"></div>
+<div class="container">
+    <h2>Orders history</h2>
+    <div class="content-container"  *ngIf="orders">
+        <div class="orders-container">
+            <span>Edit</span>
+            <div class="hint">First Name</div>
+            <div class="value">Oposum</div>
+            <div class="hint">Last Name</div>
+            <div class="value">Marcel</div>
+            <div class="hint">Email</div>
+            <div class="value">oposum69marcel@fker.com</div>
+        </div>
+    </div>
+    <div class="location-container"></div>
+    <div class="content-container" *ngIf="!orders">
+        <div class="orders-container">
+            <div class="hint">Orders</div>
+            <div class="value">You don't have any orders, yet !</div>
+            <div class="sugestion">Explore our restaurants, and order your favorite food</div>
+        </div> 
+    </div>
+</div>
+

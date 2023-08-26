@@ -27,6 +27,7 @@ import { FooterComponent } from './home/footer/footer.component';
 import { BrandsComponent } from './home/brands/brands.component';
 import { BrandItemComponent } from './home/brands/brand-item/brand-item.component';
 import { LocationModalComponent } from './home/location-modal/location-modal.component';
+import { OrdersHistoryComponent } from './profile/orders-history/orders-history.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,7 @@ import { LocationModalComponent } from './home/location-modal/location-modal.com
     BrandsComponent,
     BrandItemComponent,
     LocationModalComponent,
+    OrdersHistoryComponent,
   ],
   imports: [
     BrowserModule,
