@@ -28,6 +28,8 @@ import { BrandsComponent } from './home/brands/brands.component';
 import { BrandItemComponent } from './home/brands/brand-item/brand-item.component';
 import { LocationModalComponent } from './home/location-modal/location-modal.component';
 import { OrdersHistoryComponent } from './profile/orders-history/orders-history.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InputComponent } from './shared/input/input.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,12 +56,14 @@ import { OrdersHistoryComponent } from './profile/orders-history/orders-history.
     BrandItemComponent,
     LocationModalComponent,
     OrdersHistoryComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

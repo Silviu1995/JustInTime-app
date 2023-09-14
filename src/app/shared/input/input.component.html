@@ -1,0 +1,20 @@
+<input [type]="type" [formControl]="control" [placeholder]="placeholder">
+<ng-container *ngIf="control.touched && control.dirty">
+    <p *ngIf="control.errors?.pattern">
+    Passwords must be at least 8 characters long, have 1
+    uppercase letter, 1 lowercase letter, and 1 number.
+    </p>
+    <p *ngIf="control.errors?.required">
+        Field required!
+    </p>
+    <p *ngIf="control.errors?.minLength">
+        Mininum length must be atleast 4 characters
+    </p>
+    <p *ngIf="control.errors?.noMatch" class="text-red-400">
+        Passwords do not match.
+      </p>
+    <p *ngIf="control.errors?.email" class="text-red-400">
+        You must enter a valid email
+    </p>  
+</ng-container>
+

@@ -16,14 +16,8 @@
         color: #229e3b;
         font-weight: 700;
     }
-    input{
-        border-radius: 5px;
-        border: 0.5px solid grey;
-        padding: 5px;
-    }
-    input:focus {
-            outline: none;
-        }
+    
+    
     label{
         font-size: 16px;
         color: rgb(98, 97, 97);
@@ -31,7 +25,7 @@
     form {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
         align-items: center;
         .fields-container {
             display: flex;
@@ -39,6 +33,7 @@
             flex-wrap: wrap;
             width: 90%;
             gap: 5px;
+            
             .field-container {
                 display: flex;
                 flex-direction: column;
