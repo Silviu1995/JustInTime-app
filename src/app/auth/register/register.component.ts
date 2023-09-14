@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RegisterValidators } from '../validators/register-validator';
+import { AuthService } from '../auth.service';
+import { SignUp } from 'src/app/shared/logo/models/signUp.model';
 
 @Component({
   selector: 'app-register',
@@ -8,6 +10,7 @@ import { RegisterValidators } from '../validators/register-validator';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  constructor(private authService: AuthService){}
   firstName: FormControl = new FormControl('', [Validators.required, Validators.minLength(4)])
   lastName: FormControl = new FormControl('',[Validators.required, Validators.minLength(4)])
   email: FormControl = new FormControl('',[Validators.required, Validators.email])
@@ -23,6 +26,15 @@ export class RegisterComponent {
   },[RegisterValidators.match('password','confirmPassword')])
 
   onSubmit() {
-    console.log(this.registerForm.value)
+    if(!this.registerForm.valid){
+      return
+    }
+    const user: SignUp = {
+      firstName: this.firstName.value,
+      lastName: this.lastName.value,
+      email: this.email.value,
+      password: this.password.value
+    }
+    this.authService.signUp(user)
   }
 }

@@ -30,6 +30,7 @@ import { LocationModalComponent } from './home/location-modal/location-modal.com
 import { OrdersHistoryComponent } from './profile/orders-history/orders-history.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputComponent } from './shared/input/input.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import { InputComponent } from './shared/input/input.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
