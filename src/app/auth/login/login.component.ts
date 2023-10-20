@@ -18,9 +18,9 @@ loginForm: FormGroup = new FormGroup({
   password: this.password
 })
 onLogin(e) {
-  // if(!this.loginForm.valid){
-  //   return
-  // }
+  if(!this.loginForm.valid){
+    return
+  }
   e.preventDefault();
   const user: SignIn = {
     email: this.email.value,
