@@ -1,14 +1,14 @@
 <div class="login-container">
     <app-logo></app-logo>
     <p>Glad having you back!</p>
-    <form >
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin($event)">
         <div class="field-container">
             <label for="email">Email</label>
-            <input type="text" name="" id="email">
+            <app-input [control]="email"></app-input>
         </div>
         <div class="field-container">
             <label for="password">Password</label>
-            <input type="password" name="" id="password">
+            <app-input [control]="password" type="password"></app-input>
         </div>
         <div class="buttons-container">
             <button class="submit-btn" type="submit">Login</button>

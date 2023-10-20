@@ -17,10 +17,11 @@ loginForm: FormGroup = new FormGroup({
   email: this.email,
   password: this.password
 })
-onLogin() {
-  if(!this.loginForm.valid){
-    return
-  }
+onLogin(e) {
+  // if(!this.loginForm.valid){
+  //   return
+  // }
+  e.preventDefault();
   const user: SignIn = {
     email: this.email.value,
     password: this.password.value
