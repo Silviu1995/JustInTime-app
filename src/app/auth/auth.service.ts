@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { SignUp } from '../shared/logo/models/signUp.model';
+import { SignIn, SignUp } from '../shared/logo/models/signUp.model';
 import {tap} from 'rxjs/operators'
 import { catchError } from 'rxjs/operators';
 @Injectable({
@@ -23,11 +23,27 @@ export class AuthService {
       }).pipe(
         catchError(error => {
           console.error('Error:', error);
-          throw error; // Pentru a permite propagarea erorii către componentă
+          throw error; 
         })
       )
       .subscribe((data) => {
         console.log(data);
       });
-  }
+    }
+
+    signIn(user: SignIn) {
+      return this.http.post('http://localhost:3000/auth/signin',
+      {
+        email: user.email,
+        password: user.password,
+      }).pipe(
+        catchError(error => {
+          console.error('Error:', error);
+          throw error; 
+        })
+      )
+      .subscribe((data) => {
+        console.log(data);
+      });
+    }
 }
