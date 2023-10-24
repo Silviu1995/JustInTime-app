@@ -1,30 +1,31 @@
 .navbar-container {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    background-color: #c51350;
-    background-image: url('../../assets/cards_bg.png');
-    justify-content: space-between;
-    border-radius: 0px 0px 0px 80px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: #282828;
+  justify-content: space-between;
+  border-radius: 0px 0px 0px 80px;
+  align-items: center;
+  height: 100px;
+  z-index: 10;
+
+  .lg-container {
+    padding: 5px;
+  }
+
+  .links-container {
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    z-index: 10;
-    .lg-container {
-        padding: 5px;
-        
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+
+    a {
+      text-decoration: none;
+      outline: none;
+      color: inherit;
     }
-    .links-container {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        padding: 20px;
-        a {
-            text-decoration: none;
-            outline: none;
-            color: inherit;
-        }
-        
-    }
+  }
 }
