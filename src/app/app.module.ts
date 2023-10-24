@@ -31,6 +31,7 @@ import { OrdersHistoryComponent } from './profile/orders-history/orders-history.
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputComponent } from './shared/input/input.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +59,7 @@ import { HttpClientModule } from '@angular/common/http';
     LocationModalComponent,
     OrdersHistoryComponent,
     InputComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
